@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    text-align: center;
+    background-image: url("digital-art-squid-game-show.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+}
+.btn-container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 75vmin;
+    width: 40%;
+    border-radius: 50px;
+    background-color: rgba(56, 102, 65,0.4);
+    /* opacity: 0.5; */
+}
+.yellow{
+    background-color: 	#FFD700;
+}
+.red{
+    background-color: #B80000;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: #32CD32;
+}
+.flash{
+    background-color: white;
+}
+.userFlash{
+    background-color: darkgreen;
+}
+h3{
+    text-align: start;
+    font-size: 2rem;
+}
+#scores{
+   display: flex;
+   justify-content: space-around;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startBtn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 10%;
+    width: 10%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    transition: 0.5s;
+}
+.startBtn:hover{
+    box-shadow: 2px 2px 10px rgb(23, 22, 22);
+}
+.hide{
+    display: none;
+}

@@ -10,8 +10,6 @@ let btns = ["red","yellow","blue","green"];
 let started = false;
 
 let startBtn = document.querySelector(".startBtn");
-// let restartBtn = document.querySelector(".restartBtn");
-// restartBtn.classList.add("hide");
 
 //initialize the level = 0
 let level = 0;
@@ -63,9 +61,7 @@ function gameFlash(btn){
 
 //level up function
 function lvlUp(){
-    //array for storing user sequence
     userSeq = [];
-    //increment the level
     level++;
    h2.innerText = `Level ${level}`;
    
@@ -76,7 +72,6 @@ let randCol = btns[randIdx];
 //randBtn stores the color name
 let randBtn = document.querySelector(`.${randCol}`);
    gameSeq.push(randCol);
-//    console.log(gameSeq);
 
    gameFlash(randBtn);
 }
@@ -91,10 +86,8 @@ function checkAns(idx){
        document.querySelector("#sc").textContent = score;
     }
     }else{
-        // restartBtn.classList.toggle("hide");
         audio1.pause();
         let audio = new Audio("mixkit-retro-arcade-lose-2027.wav");
-        // audio.currentTime = 0;
         audio.play();
         
         score = level*10;
@@ -106,11 +99,6 @@ function checkAns(idx){
         h2.innerText = "Game Over! Press any key to restart";
 
         document.addEventListener("keypress",reset);
-        // document.querySelector("body").style.backgroundColor = "red";
-        // setTimeout(function(){
-        //     document.querySelector("body").style.backgroundColor = "white";
-        // },250);
-        // reset();
         document.querySelector("#sc").textContent = 0;
     }
 }
